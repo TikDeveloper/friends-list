@@ -18,23 +18,29 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": ["node_modules/@types", "types/"],
+    "baseUrl": "./src",
+    "paths": {
+      "@app": ["./app"],
+      "@app/*": ["./app/*"],
+
+      "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
+
+      "@widgets": ["./widgets"],
+      "@widgets/*": ["./widgets/*"],
+
+      "@features": ["./features"],
+      "@features/*": ["./features/*"],
+
+      "@entities": ["./entities"],
+      "@entities/*": ["./entities/*"],
+
+      "@shared": ["./shared"],
+      "@shared/*": ["./shared/*"]
+    }
   },
-  "include": ["src"],
-  "baseUrl": "src",
-  // "paths": {
-  //   "@common": ["components/common/index.ts"],
-  //   "@layouts": ["components/layouts/index.ts"],
-  //   "@components/*": ["components/*"],
-  //   "@libs/*": ["libs/*"],
-  //   "@providers/*": ["providers/*"],
-  //   "@utils": ["utils/index.ts"],
-  //   "@pages/*": ["pages/*"],
-  //   "@router/*": ["router/*"],
-  //   "@store/*": ["store/*"],
-  //   "@api/*": ["api/*"],
-  //   "@hooks": ["hooks/index.ts"],
-  //   "@mocks/*": ["mocks/*"]
-  // },
+  "include": ["src", "types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
