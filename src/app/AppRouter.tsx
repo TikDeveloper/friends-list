@@ -1,4 +1,4 @@
-import { MainLayout } from '../layouts';
+import { MainLayout } from './layouts';
 import { PAGE_PATH } from '@shared/lib/react-router';
 import { Loadable } from '@shared/ui/loadable';
 import { lazy } from 'react';
@@ -31,7 +31,7 @@ const FourOrFourPage = Loadable(
   lazy(() => import(/* webpackChunkName: "404-Page" */ '@pages/page-404'))
 );
 
-export const RouterProvider = () => {
+export const AppRouter = () => {
   return useRoutes([
     {
       element: <MainLayout />,
