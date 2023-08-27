@@ -1,0 +1,1 @@
+export { RemoveFriendBtn } from './RemoveFriendBtn';

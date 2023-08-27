@@ -1,3 +1,9 @@
+import { FriendList } from '@widgets/friend-list';
+
 export const FriendsPage = () => {
-  return <div>FriendsPage</div>;
+  return (
+    <>
+      <FriendList />
+    </>
+  );
 };
