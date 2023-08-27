@@ -1,6 +1,6 @@
 # React + TypeScript + Vite + FSD
 
-<a href="https://feature-sliced.design/"><img alt="Feature-Sliced Design, an architectural methodology for frontend projects" src="https://raw.githubusercontent.com/feature-sliced/documentation/master/.github/assets/README-banner-light.svg" height="80" /></a>
+<a href="https://feature-sliced.design/"><img alt="Feature-Sliced Design, an architectural methodology for frontend projects" src="https://raw.githubusercontent.com/feature-sliced/documentation/master/.github/assets/README-banner-dark.svg#gh-dark-mode-only" height="80" /></a>
 
 # Friends List WebApp
 
