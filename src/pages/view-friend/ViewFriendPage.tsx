@@ -1,3 +1,9 @@
+import { FriendInfo } from '@widgets/friend-info';
+
 export const ViewFriendPage = () => {
-  return <div>ViewFriendPage</div>;
+  return (
+    <>
+      <FriendInfo />
+    </>
+  );
 };

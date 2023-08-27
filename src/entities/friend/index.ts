@@ -9,4 +9,7 @@ export {
   friendSelector,
   totalQntFriendsSelector,
 } from './model/slice';
+export { useGetFriendByParamId } from './model/hooks';
+
 export { tableColumns } from './lib/configs';
+export { FriendDetails } from './ui/FriendDetails';

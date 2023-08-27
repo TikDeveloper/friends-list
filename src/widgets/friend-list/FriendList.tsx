@@ -20,7 +20,7 @@ export const FriendList = () => {
       <div className="d-flex gap-2">
         <Link
           to={PAGE_PATH.friends.edit.route(row.id)}
-          className="btn btn-warning"
+          className="btn btn-success"
         >
           Edit
         </Link>
@@ -50,6 +50,13 @@ export const FriendList = () => {
                 data={row}
                 columns={columns}
                 actionsSlot={actionsSlot(row)}
+                dynamicSlots={{
+                  name: (
+                    <Link to={PAGE_PATH.friends.preview.route(row.id)}>
+                      {row.name}
+                    </Link>
+                  ),
+                }}
               />
             ));
           }}
