@@ -8,12 +8,19 @@ import { RemoveFriendBtn } from '@features/friend/remove';
 import { PAGE_PATH } from '@shared/lib/react-router';
 import { useAppSelector } from '@shared/model';
 import { Table, TableRow } from '@shared/ui';
+import { useMemo } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export const FriendList = () => {
   const friendsMap = useAppSelector(friendsSelector);
   const totalFriends = useAppSelector(totalQntFriendsSelector);
+
+  const sortedFriends = useMemo(() => {
+    return Object.values(friendsMap).sort((a, b) =>
+      a.createdAt > b.createdAt ? -1 : 1
+    );
+  }, [friendsMap]);
 
   const actionsSlot = (row: Friend) => {
     return (
@@ -34,7 +41,7 @@ export const FriendList = () => {
       <h1 className="my-5">Friends List</h1>
       {!!totalFriends && (
         <Table
-          data={Object.values(friendsMap)}
+          data={sortedFriends}
           columns={tableColumns}
           tableProps={{
             striped: true,

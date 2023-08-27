@@ -4,4 +4,5 @@ export type Friend = {
   email: string;
   phone: string;
   twitter: string;
+  createdAt: number;
 };

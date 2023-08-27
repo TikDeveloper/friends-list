@@ -1,3 +1,9 @@
+import { NewFriend } from '@widgets/new-friend';
+
 export const NewFriendPage = () => {
-  return <div>NewFriendPage</div>;
+  return (
+    <>
+      <NewFriend />
+    </>
+  );
 };

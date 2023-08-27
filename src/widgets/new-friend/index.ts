@@ -1,0 +1,1 @@
+export { NewFriend } from './NewFriend';
