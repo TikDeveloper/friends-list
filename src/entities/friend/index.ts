@@ -12,4 +12,5 @@ export {
 export { useGetFriendByParamId } from './model/hooks';
 
 export { tableColumns } from './lib/configs';
-export { FriendDetails } from './ui/FriendDetails';
+export { FriendDetails } from './ui/FriendDetails/FriendDetails';
+export { FriendFormWrapper } from './ui/FriendFormWrapper/FriendFormWrapper';
